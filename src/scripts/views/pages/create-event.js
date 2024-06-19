@@ -6,57 +6,63 @@ const AddEvent = {
     return `
       <section id="add-event">
         <div class="container mt-5">
-          <h2 class="text-center fw-bold pt-3 pb-1 mt-1">Form Create Event</h2>
+          <h2 class="text-center fw-bold pt-3 pb-1 mt-1">Buat Event Baru</h2>
           <form class="color-black mx-2 my-5 mx-sm-0 mx-md-5">
               <div class="form-floating mb-4">
                 <input type="text" class="form-control" id="inputNameEvent" placeholder="Name" />
-                <label for="inputNameEvent">Name</label>
+                <label for="inputNameEvent">Nama</label>
               </div>
               <div class="form-floating mb-4">
                 <input type="text" class="form-control" id="inputLocationEvent" placeholder="Location" />
-                <label for="inputLocationEvent">Location</label>
+                <label for="inputLocationEvent">Lokasi</label>
               </div>
               <div class="form-floating mb-4">
                 <input type="date" class="form-control" id="inputDateEvent" placeholder="Date" />
-                <label for="inputDateEvent">Date</label>
+                <label for="inputDateEvent">Tanggal</label>
               </div>
               <div class="row g-2">
                 <div class="col">
                   <div class="form-floating mb-4">
                     <input type="time" class="form-control" id="inputTimeEvent" placeholder="Time" />
-                    <label for="inputTimeEvent">Time</label>
+                    <label for="inputTimeEvent">Jam</label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-floating mb-4">
                     <select class="form-select" id="inputTimezoneEvent" aria-label="Selecting Indonesian Timezone">
-                      <option selected disabled>Select Indonesian Timezone</option>
+                      <option selected disabled>Pilih zona waktu</option>
                       <option value="WIB">WIB</option>
                       <option value="WITA">WITA</option>
                       <option value="WIT">WIT</option>
                     </select>
-                    <label for="inputTimezoneEvent">Timezone</label>
+                    <label for="inputTimezoneEvent">Zona waktu</label>
                   </div>
                 </div>
               </div>
               <div class="form-floating mb-4">
                 <select class="form-select" id="inputTagsEvent" aria-label="Selecting Categories Event">
-                  <option selected disabled>Select Categories</option>
-                  <option value="Travel & Tour">Travel & Tour</option>
-                  <option value="Culture Show">Culture Show</option>
-                  <option value="Competition">Competition</option>
-                  <option value="Festival">Festival</option>
+                  <option selected disabled>Pilih Kategori</option>
+                  <option value="Sejarah">Sejarah</option>
+                  <option value="Cagar Alam">Cagar Alam (Ecotourism)</option>
+                  <option value="Pantai">Pantai</option>
+                  <option value="Kuliner">Kuliner</option>
+                  <option value="Belanja">Belanja</option>
+                  <option value="Religi">Religi</option>
+                  <option value="Petualangan">Petualangan</option>
+                  <option value="Seni & Budaya">Seni & Budaya</option>
+                  <option value="Edukasi">Edukasi</option>
+                  <option value="Keluarga">Keluarga</option>
                 </select>
-                <label for="inputTagsEvent">Categories</label>
+                <label for="inputTagsEvent">Kategori</label>
               </div>
               <div class="form-floating mb-3" style="padding: 10px 0 20px 0;">
                   <input type="url" class="form-control" id="inputImageEvent" placeholder="Image" />
-                  <label for="inputImageEvent">Image (Insert Direct Link Image)</label>
-                  <p class="size-text-sm ps-2 pt-2 mb-0">Convert image to direct link Url with <a href="https://postimages.org/" class="color-postimages linkhov-deco fw-bold" target="_blank">postimages</a></p>
+                  <label for="inputImageEvent">Gambar / Foto (Masukkan link gambar)</label>
+                  <p class="size-text-sm ps-2 pt-2 mb-0">Konversi gambar menjadi tautan <a href="https://postimages.org/" class="color-postimages linkhov-deco fw-bold" target="_blank">postimages</a></p>
               </div> 
               <div class="form-floating mb-4">
                 <textarea class="form-control description-textarea" id="inputDescriptionEvent" placeholder="Description" ></textarea>
-                <label for="inputDescriptionEvent">Description</label>
+                <label for="inputDescriptionEvent">Deskripsi</label>
               </div>
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2 pt-1">
                 <button id="submitEvent" type="submit" class="btn btn-green fs-5 px-5 fw-bold my-2 my-sm-0 me-sm-3" tabindex="-1">Submit</button>

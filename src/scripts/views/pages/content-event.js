@@ -18,10 +18,10 @@ const ContentEvent = {
                 <div class="row">
                     <div class="col-md-8">
                         <h2>Event</h2>
-                        <p class="lead">All activities/event/competitions about culture and tourism of Nusantara</p>
+                        <p class="lead">Berbagai macam aktivitas dan event wisata di Indonesia</p>
                     </div>
                     <div class="col-md-4 my-auto d-flex justify-content-md-end">
-                        <a href="#/create-event" onclick="window.scrollTo(0, 0);"><button type="button" class="btn btn-green px-3 py-2" tabindex="-1">Create New Event</button></a>
+                        <a href="#/create-event" onclick="window.scrollTo(0, 0);"><button type="button" class="btn btn-green px-3 py-2" tabindex="-1">Buat Event Baru</button></a>
                     </div>
                 </div>
                 <div class="row">
@@ -41,12 +41,12 @@ const ContentEvent = {
                           <option value="Edukasi">Edukasi</option>
                           <option value="Keluarga">Keluarga</option>
                         </select>
-                        <label for="findTagsEvent">Categories</label>
+                        <label for="findTagsEvent">Kategori</label>
                       </div>
                     <form>
                   </div>
                   <div class="col-md-4 my-auto d-flex justify-content-center justify-content-md-start">
-                      <button id="btnFind" type="button" class="btn btn-green px-3 py-2" tabindex="-1">Find Category</button>
+                      <button id="btnFind" type="button" class="btn btn-green px-3 py-2" tabindex="-1">Cari Kategori</button>
                   </div>
                 </div>
             </div>
@@ -89,14 +89,26 @@ const ContentEvent = {
         } else {
           eventContainer.style.display = 'none';
           categoryContainer.style.display = 'flex';
-          if (findTagsEvent.value === 'Travel & Tour') {
-            this.category = 'Travel+%26+Tour';
-          } else if (findTagsEvent.value === 'Culture Show') {
-            this.category = 'Culture+Show';
-          } else if (findTagsEvent.value === 'Competition') {
-            this.category = 'Competition';
+          if (findTagsEvent.value === 'Sejarah') {
+            this.category = 'Sejarah';
+          } else if (findTagsEvent.value === 'Cagar Alam') {
+            this.category = 'Cagar Alam';
+          } else if (findTagsEvent.value === 'Pantai') {
+            this.category = 'Pantai';
+          } else if (findTagsEvent.value === 'Kuliner') {
+            this.category = 'Kuliner';
+          } else if (findTagsEvent.value === 'Belanja') {
+            this.category = 'Belanja';
+          } else if (findTagsEvent.value === 'Religi') {
+            this.category = 'Religi';
+          } else if (findTagsEvent.value === 'Petualangan') {
+            this.category = 'Petualangan';
+          } else if (findTagsEvent.value === 'Seni & Budaya') {
+            this.category = 'Seni & Budaya';
+          } else if (findTagsEvent.value === 'Edukasi') {
+            this.category = 'Edukasi';
           } else {
-            this.category = 'Festival';
+            this.category = 'Keluarga';
           }
           loadEvent.style.display = 'flex';
           const categoryCard = await APIsource.findCategoryEvent(this.category);

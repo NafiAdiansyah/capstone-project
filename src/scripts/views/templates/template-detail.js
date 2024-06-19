@@ -5,7 +5,7 @@ const createDetailArticleTemplate = (detailArticle) => `
             <p class="size-text-sm ms-1 ms-md-4 mb-0">
                 <a class="linkhov-deco color-black" href="/">WW</a> / 
                 <a class="linkhov-deco color-black" href="#/content-article">Artikel</a> / 
-                <span class="color-ctn fw-bold">${detailArticle.name}</span>
+                <span class="color-ww fw-bold">${detailArticle.name}</span>
             </p>
         </div>
         <div class="d-flex justify-content-center mx-3 mx-lg-0 mt-2 mb-2 pt-2">
@@ -39,7 +39,7 @@ const createDetailArticleTemplate = (detailArticle) => `
 
 <!-- Review Article -->
 <div class="container mt-5">
-    <h3 class="text-center color-ctn fw-bold pt-3 pb-1 mt-1">Berikan komentarmu.</h3>
+    <h3 class="text-center color-ww fw-bold pt-3 pb-1 mt-1">Berikan komentarmu.</h3>
     <form class="color-black mx-2 my-5 mx-sm-0 mx-md-5">
         <div class="form-floating mb-4">
             <input type="text" class="form-control" id="inputUserReview" placeholder="Name">
@@ -59,7 +59,7 @@ const createDetailArticleTemplate = (detailArticle) => `
 
         <div class="col-md-9 px-4 px-md-0">
             <div class="headings d-flex justify-content-between align-items-center mb-3">
-                <h5 class="color-ctn fw-bold pt-3 pb-1 mt-1">All User Comments</h5>
+                <h5 class="color-ww fw-bold pt-3 pb-1 mt-1">All User Comments</h5>
             </div>
             ${detailArticle.userReviews.map((comment) => `
             <div class="card card-comment my-3">
@@ -98,7 +98,7 @@ const createDetailEventTemplate = (detailEvent) => `
             <p class="size-text-sm ps-3">
                 <a class="linkhov-deco color-black" href="/">ww</a> / 
                 <a class="linkhov-deco color-black" href="#/content-event">Event</a> / 
-                <span class="color-ctn fw-bold">${detailEvent.name}</span>
+                <span class="color-ww fw-bold">${detailEvent.name}</span>
             </p>
         </div>
     </div>
@@ -133,15 +133,15 @@ const createDetailEventTemplate = (detailEvent) => `
 
 <!-- Review Event -->
 <div class="container mt-5">
-    <h3 class="text-center color-ctn fw-bold pt-3 pb-1 mt-1">What's your comment?</h3>
+    <h3 class="text-center color-ww fw-bold pt-3 pb-1 mt-1">Berikan komentarmu.</h3>
     <form class="color-black mx-2 my-5 mx-sm-0 mx-md-5">
         <div class="form-floating mb-4">
             <input type="text" class="form-control" id="inputUserReview" placeholder="Name">
-            <label for="inputUserReview">Name</label>
+            <label for="inputUserReview">Nama</label>
         </div>
         <div class="form-floating mb-4">
             <textarea class="form-control comment-textarea" id="inputReviewEvent" placeholder="Leave your comment here"></textarea>
-            <label for="inputReview">Your Comment</label>
+            <label for="inputReview">Komentar</label>
         </div>
         <div class="d-flex justify-content-center my-2 pt-3 pb-2 px-3 px-md-5">
             <button id="submitReview" type="button" class="btn btn-green fs-5 px-5 fw-bold" tabindex="-1">Submit</button>
@@ -153,7 +153,7 @@ const createDetailEventTemplate = (detailEvent) => `
 
         <div class="col-md-9 px-4 px-md-0">
             <div class="headings d-flex justify-content-between align-items-center mb-3">
-                <h5 class="color-ctn fw-bold pt-3 pb-1 mt-1">All User Comments</h5>
+                <h5 class="color-ww fw-bold pt-3 pb-1 mt-1">All User Comments</h5>
             </div>
             ${detailEvent.userReviews.map((comment) => `
             <div class="card card-comment my-3">
@@ -192,7 +192,7 @@ const createSkeletonDetailArticleTemplate = () => `
             <p class="size-text-sm ms-1 ms-md-4 mb-0">
                 <a class="linkhov-deco color-black" href="/">WW</a> / 
                 <a class="linkhov-deco color-black" href="#/content-article">Artikel</a> / 
-                <span class="color-ctn fw-bold">Shadow Detail Article</span>
+                <span class="color-ww fw-bold">Shadow Detail Article</span>
             </p>
         </div>
         <div class="d-flex justify-content-center mx-3 mx-lg-0 mt-2 mb-2 pt-2">
@@ -228,7 +228,7 @@ const createSkeletonDetailArticleTemplate = () => `
 
 <!-- Review Article -->
 <div class="container mt-5">
-    <h3 class="text-center color-ctn fw-bold pt-3 pb-1 mt-1">Berikan komentarmu.</h3>
+    <h3 class="text-center color-ww fw-bold pt-3 pb-1 mt-1">Berikan komentarmu.</h3>
     <form class="color-black mx-2 my-5 mx-sm-0 mx-md-5">
         <div class="form-floating mb-4">
             <input type="text" class="form-control" id="inputUserReview" placeholder="Name">
@@ -248,7 +248,7 @@ const createSkeletonDetailArticleTemplate = () => `
 
         <div class="col-md-9 px-4 px-md-0">
             <div class="headings d-flex justify-content-between align-items-center mb-3">
-                <h5 class="color-ctn fw-bold pt-3 pb-1 mt-1">Semua komentar</h5>
+                <h5 class="color-ww fw-bold pt-3 pb-1 mt-1">Semua komentar</h5>
             </div>
             <div class="card card-comment my-3">
                 <div class="card-body py-3">
@@ -284,7 +284,7 @@ const createSkeletonDetailEventTemplate = () => `
             <p class="size-text-sm ps-3">
                 <a class="linkhov-deco color-black" href="/">WW</a> / 
                 <a class="linkhov-deco color-black" href="#/content-event">Event</a> / 
-                <span class="color-ctn fw-bold">Shadow Detail Event</span>
+                <span class="color-ww fw-bold">Shadow Detail Event</span>
             </p>
         </div>
     </div>
@@ -320,7 +320,7 @@ const createSkeletonDetailEventTemplate = () => `
 
 <!-- Review Event -->
 <div class="container mt-5">
-    <h3 class="text-center color-ctn fw-bold pt-3 pb-1 mt-1">Berikan komentarmu.</h3>
+    <h3 class="text-center color-ww fw-bold pt-3 pb-1 mt-1">Berikan komentarmu.</h3>
     <form class="color-black mx-2 my-5 mx-sm-0 mx-md-5">
         <div class="form-floating mb-4">
             <input type="text" class="form-control" id="inputUserReview" placeholder="Name">
@@ -340,7 +340,7 @@ const createSkeletonDetailEventTemplate = () => `
 
         <div class="col-md-9 px-4 px-md-0">
             <div class="headings d-flex justify-content-between align-items-center mb-3">
-                <h5 class="color-ctn fw-bold pt-3 pb-1 mt-1">All User Comments</h5>
+                <h5 class="color-ww fw-bold pt-3 pb-1 mt-1">All User Comments</h5>
             </div>
             <div class="card card-comment my-3">
                 <div class="card-body py-3">

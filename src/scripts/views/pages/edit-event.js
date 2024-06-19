@@ -40,8 +40,8 @@ const EditEvent = {
         || !editImageEvent.value || !editTagsEvent.value) {
         Swal.fire({
           icon: 'error',
-          title: 'Your input still empty',
-          text: 'Please fill the empty input form!',
+          title: 'Input tidak boleh kosong',
+          text: 'Tolong isi bagian yang kosong!',
         });
       } else {
         const dataEvent = {
@@ -55,8 +55,8 @@ const EditEvent = {
           categories: editTagsEvent.value,
         };
         Swal.fire({
-          title: 'Are you sure update this event',
-          text: 'Make sure your changes are correct!',
+          title: 'Yakin untuk memperbarui event?',
+          text: 'Pastikan permbaruan sudah benar!',
           icon: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
@@ -67,7 +67,7 @@ const EditEvent = {
             await APIsource.editEvent(url.id, dataEvent);
             Swal.fire(
               'Updated!',
-              'Your selected event has been updated.',
+              'Event berhasil diperbarui.',
               'success',
             );
             window.location.href = `#/detail-event/${url.id}`;

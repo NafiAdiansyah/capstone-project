@@ -10,7 +10,7 @@ const createContentArticleTemplate = (contentArticles) => `
             <div class="card-body px-4">
                 <p class="card-text fw-normal size-text-sm mb-0"><i class="fa fa-calendar me-1"></i>${contentArticles.publishDate} | <i class="fa fa-user me-1"></i>${contentArticles.publisherName}</p>
                 <p class="card-text fw-normal size-text-sm mb-2"><i class="fa fa-tags me-1"></i>${contentArticles.categories}</p>
-                <h5 class="card-title text-center fw-bold color-ctn py-2">${contentArticles.name}</h5>
+                <h5 class="card-title text-center fw-bold color-ww py-2">${contentArticles.name}</h5>
                 <p class="card-text text-limit mt-2 mb-0">
                     ${contentArticles.description}
                 </p>
@@ -33,7 +33,7 @@ const createContentEventTemplate = (contentEvents) => `
                 width="600px" height="700px"
             >
             <div class="card-body px-4">
-                <h5 class="card-title text-center fw-bold color-ctn py-2">${contentEvents.name}</h5>
+                <h5 class="card-title text-center fw-bold color-ww py-2">${contentEvents.name}</h5>
                 <p class="card-text fw-normal mb-0"><i class="fa fa-map-marker me-1"></i>${contentEvents.location}</p>
                 <p class="card-text fw-normal mb-0"><i class="fa fa-calendar me-1"></i>${contentEvents.date}</p>
                 <p class="card-text fw-normal mb-0"><i class="fa fa-clock-o me-1"></i>${contentEvents.time} ${contentEvents.timezone}</p>
@@ -61,7 +61,7 @@ const createSkeletonArticleTemplate = (count) => {
             <div class="card-body px-4">
                 <p class="card-text fw-normal size-text-sm mb-0"><i class="fa fa-calendar me-1"></i>XXXX-XX-XX | <i class="fa fa-user me-1"></i>Penerbit</p>
                 <p class="card-text fw-normal size-text-sm mb-2"><i class="fa fa-tags me-1"></i>Kategori</p>
-                <h5 class="card-title text-center fw-bold color-ctn py-2">Lorem ipsum dolor sit amet</h5>
+                <h5 class="card-title text-center fw-bold color-ww py-2">Lorem ipsum dolor sit amet</h5>
                 <p class="card-text text-limit mt-2 mb-0">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                     Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
@@ -96,7 +96,7 @@ const createSkeletonEventTemplate = (count) => {
                 width="800px" height="700px"
             >
             <div class="card-body px-4">
-                <h5 class="card-title text-center fw-bold color-ctn py-2">Lorem Ipsum Inarte</h5>
+                <h5 class="card-title text-center fw-bold color-ww py-2">Lorem Ipsum Inarte</h5>
                 <p class="card-text fw-normal mb-0"><i class="fa fa-map-marker me-1"></i>Indonesia</p>
                 <p class="card-text fw-normal mb-0"><i class="fa fa-calendar me-1"></i>XXXX-XX-XX</p>
                 <p class="card-text fw-normal mb-0"><i class="fa fa-clock-o me-1"></i>XX:XX WIB</p>
@@ -114,7 +114,7 @@ const createSkeletonEventTemplate = (count) => {
 
 const createLoadingText = () => `  
     <div class="lds-dual-ring"></div>
-    <h3 class="text-center mb-5">Loading API Data. Please Wait.....</h3>
+    <h3 class="text-center mb-5">Loading API Data. Tunggu sebentar.....</h3>
 `;
 
 const createAfterLoadingText = (err) => `  
@@ -129,7 +129,7 @@ const createCardEmpty = () => `
             width="300px" height="300px"
         >
     </div>
-    <h3 class="text-center mt-2 mb-5">Data in API is Empty. Please create new content!!</h3>
+    <h3 class="text-center mt-2 mb-5">Data API kosong. Tolong tambahkan data baru!.</h3>
 `;
 
 const createCategoryNotFound = (categories) => ` 
@@ -140,7 +140,7 @@ const createCategoryNotFound = (categories) => `
             width="300px" height="300px"
         >
     </div>
-    <h3 class="text-center mt-2 mb-5">The category of ${categories} is not found</h3>
+    <h3 class="text-center mt-2 mb-5">Kategori ${categories} tidak ditemukan</h3>
 `;
 
 export {

@@ -40,8 +40,8 @@ const EditArticle = {
         || !editPublisherName.value || !editDateArticle.value || !editTagsArticle.value) {
         Swal.fire({
           icon: 'error',
-          title: 'Your input still empty',
-          text: 'Please fill the empty input form!',
+          title: 'Input tidak boleh kosong!',
+          text: 'Tolong isi bagian yang kosong!',
         });
       } else {
         const dataArticle = {
@@ -53,8 +53,8 @@ const EditArticle = {
           categories: editTagsArticle.value,
         };
         Swal.fire({
-          title: 'Are you sure update this article?',
-          text: 'Make sure your changes are correct!',
+          title: 'Apa kamu yakin untuk mengubah artikel ini?',
+          text: 'Pastikan perubahanmu sudah benar!',
           icon: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
@@ -65,7 +65,7 @@ const EditArticle = {
             await APIsource.editArticle(url.id, dataArticle);
             Swal.fire(
               'Updated!',
-              'Your selected article has been updated.',
+              'Artikel berhasil diperbarui.',
               'success',
             );
             window.location.href = `#/detail-article/${url.id}`;

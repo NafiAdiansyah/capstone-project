@@ -41,10 +41,8 @@ class FooterWeb extends HTMLElement {
               <div class="row mt-4 mt-md-0">
                 <ul class="nav flex-column">
                   <h5 class="mx-3">Help Center</h5>
-                  <li class="nav-item mb-2 mx-3"><p class="m-0 text-muted"><i class="fa fa-phone me-2"></i>+6299999999</p></li>
-                  <li class="nav-item mb-2 mx-3"><p class="m-0 text-muted"><i class="fa fa-phone me-2"></i>+6299999999</p></li>
-                  <li class="nav-item mb-2 mx-3"><p class="m-0 text-muted"><i class="fa fa-envelope me-2"></i>youremail@email.com</p></li>
-                  <li class="nav-item mb-2 mx-3"><p class="m-0 text-muted"><i class="fa fa-envelope me-2"></i>youremail@email.com</p></li>
+                  <li class="nav-item mb-2 mx-3"><p class="m-0 text-muted"><i class="fa fa-envelope me-2"></i>nafiadiansyah24@gmail.com</p></li>
+                  <li class="nav-item mb-2 mx-3"><p class="m-0 text-muted"><i class="fa fa-envelope me-2"></i>rizkanawalulazka02@gmail.com</p></li>
                 </ul>
               </div>
             </div>

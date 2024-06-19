@@ -1,4 +1,4 @@
-const CONFIG = { BASE_URL: 'http://localhost:3030/' };
+const CONFIG = { BASE_URL: 'http://localhost:3030/api/' };
 
 const API_ENDPOINT = {
   ARTICLES: `${CONFIG.BASE_URL}articles`,
